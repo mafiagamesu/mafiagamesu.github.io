@@ -1,0 +1,81 @@
+.wrapper-rules {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 2rem 3rem;
+  z-index: 20000;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  flex-direction: row;
+  overflow: hidden;
+}
+.wrapper-rules.flex {
+  display: flex;
+}
+.wrapper-rules .header {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem 0.5rem 0;
+  display: flex;
+  flex-shrink: 0;
+}
+.wrapper-rules .rules {
+  background: #dad9d9;
+  padding: 1rem;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.wrapper-rules .rules .fader-rules {
+  height: 3rem;
+  position: absolute;
+  width: 100%;
+  bottom: -1rem;
+  background: rgba(255,255,255,0);
+  background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #dad9d9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, #dad9d9));
+  -webkit-background-origin: padding-box;
+}
+.wrapper-rules .rules .button-ok {
+  opacity: 1;
+  margin: 0 5rem;
+  margin-bottom: 0.2rem;
+}
+.wrapper-rules .content {
+  padding: 0 0.5rem 1rem;
+  flex-grow: 1;
+  overflow: auto;
+}
+.wrapper-rules .footer {
+  padding: 1rem;
+}
+body.rules {
+  background: transparent;
+  overflow: auto;
+}
+body.rules a {
+  font-size: 0.8rem;
+  color: #991c00;
+}
+body.rules .b-rules {
+  font-size: 0.8rem;
+}
+body.rules .b-rules img {
+  padding: 0.5rem 0;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .b-rules {
+    padding: 0.5rem 0;
+  }
+  .b-rules img {
+    max-width: 200px;
+  }
+}
+/* ----------- iPhone 4 and 4S ----------- */
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) {
+  .wrapper-rules .rules .button-ok {
+    margin: 0 4rem;
+    margin-bottom: 0.2rem;
+  }
+}
