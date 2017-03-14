@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The introduce for game application mafia">
-    <meta name="keywords" content="game web landing mafia mafiagame">
-    <meta name="author" content="Father Can Do">
+    <meta name="description" content="Мафия – это командная игра, в которую играют в две команды. Играть интереснее всего, когда участников игры не менее, чем восемь и не более, чем двенадцать. Игроки рассаживаются по кругу так, чтобы хорошо видеть остальных.
+ После старта игры, каждому игроку выпадает карта (никому не показывать). Те игроки, кто получил карту мафии (а их в игре в 2-3 раза меньше, чем игроков с картами мирных жителей) играют в этом кону за мафию. Те же, кто получил мирные карты - играют за честных граждан.
+ После того, как каждый ознакомился со своей картой и понял свою роль, начинается игра.
+ Игроки подозрительно осматривают друг друга. Цель игры – победа своей команды. У честных жителей задача выявить игроков мафии. У игроков мафии - выдать себя за честных жителей и захватить город, уничтожив всех честных жителей. Любой играющий может высказать свои истинные (или мнимые) подозрения против любого игрока, обвинив его в связях с мафией и поставив его кандидатуру на голосования. После объявления нескольких кандидатур обвиненным игрокам предоставляется слово. Они могут использовать возможность высказаться для облечения в связях с мафией других игроков и/или выступить в свою защиту. Затем наступает голосование. Игрок, за которого проголосует большинство игроков, объявляется убитым, его карта открывается и тогда всем становится ясно, что убит либо честный гражданин и мафии удалось одурачить горожан, либо погиб мафиози (и мафия жестоко отомстит за его смерть).
+    Во время голосования, мафия, не привлекая внимания, должна согласовано выбрать жертву.
+    Далее наступает ночь, после которой игроки увидят, кого убила мафия. Далее снова день: обсуждение.
+    И так до последних игроков. Игра заканчивается либо полной победой мафии, либо честных жителей. В случае, если с обеих сторон осталось равное количество игроков, считается, что победила мафия.
+    Как вы наверное уже поняли, в игре Мафия как и в карточной игре Покер присутствуют две составляющие: умение наблюдать за другими людьми и умение делать выводы о стратегиях, с которыми играют другие игроки. Кроме того это достаточно увлекательная и динамическая игра, которая проходит в живом общении (что тоже достаточно ценно).">
+    <meta name="keywords" content="game web landing mafia mafiagame мафия командная игра игра для вечеринки ролевая игра настльная игра карточная игра мобильная игра поиграть с друзьями интересная игра веселая игра бесплатная игра играть онлайн играть бесплатно онлайн без регистрации">
+    <meta name="author" content="dadcan">
 
     <title>Mafiagame</title>
 
@@ -21,34 +28,71 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
     <![endif]-->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter43455924 = new Ya.Metrika({
+                        id:43455924,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/43455924" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!--Google Analytics-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-93707151-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <!--/Google Analytics-->
+
+    <!-- Rating@Mail.ru counter -->
+    <script type="text/javascript">
+        var _tmr = window._tmr || (window._tmr = []);
+        _tmr.push({id: "2880484", type: "pageView", start: (new Date()).getTime()});
+        (function (d, w, id) {
+            if (d.getElementById(id)) return;
+            var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+            ts.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//top-fwz1.mail.ru/js/code.js";
+            var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+            if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+        })(document, window, "topmailru-code");
+    </script><noscript><div>
+    <img src="//top-fwz1.mail.ru/counter?id=2880484;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
+</div></noscript>
+    <!-- //Rating@Mail.ru counter -->
+
 </head>
 <body>
 
 <div id="content">
     <div class="b-sepa-line"></div>
-    <div class="menu disabled">
-        <div class="menu-item" id="burger">
-            <svg class="svg-icon">
-                <use xlink:href="#icon-menu"></use>
-            </svg>
-        </div>
-    </div>
-    <aside>
-        <!--<div class="wrapper-overlay"></div>-->
-        <div class="content-menu-list menu-hide-left" id="menu-list">
-            <header>МЕНЮ</header>
-            <div class="div back noselect" id="menu-close">
-                <svg class="svg-icon">
-                    <use xlink:href="#icon-close"></use>
-                </svg>
-            </div>
-            <div class="list">
-                <div class="item-list">Анимация</div>
-            </div>
-        </div>
-    </aside>
     <div class="b-logo">
-        <span>MAFIA GAME</span>
+        <h1>ИГРА МАФИЯ</h1>
     </div>
     <div class="b-footer-social">
         <div class="social">
@@ -88,6 +132,10 @@
                 </a>
             </div>
         </div>
+        <h2>Мафия — командная психологическая
+            пошаговая ролевая игра для большой
+            компании, где не требуется ведущий и можно
+            играть с виртуальными игроками!</h2>
     </div>
     <div class="b-slide slide-02"></div>
 
@@ -106,23 +154,12 @@
     <div class="b-footer">
 
         <div class="b-footer-btns">
-            <div class="b-footer-btn">All rights reserved © dadcan, 2017</div>
+            <div class="b-footer-btn">Все права защищены © FatherCanDo, 2017</div>
             <div class="b-footer-btn"></div>
             <div class="b-footer-btn b-footer-censor">5+</div>
         </div>
     </div>
 </div>
-<div id="animation" class="disabled">
-    <div class="screen mafia-hunted disabled">
-        <div class="layout"></div>
-        <div class="desc">Мафия вышла на охоту...</div>
-    </div>
-    <div class="screen mafia-missed disabled">
-        <div class="layout"></div>
-        <div class="desc">Мафия промахнулась...</div>
-    </div>
-</div>
-
 
 
 <script src="assets/js/vendors.js"></script>
