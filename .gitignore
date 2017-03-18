@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/
+fonts/RobotoLight/
+fonts/RobotoMedium/
+fonts/RobotoRegular/
+images/favicon_mafia.png
+images/screens/
+images/slide01.png
