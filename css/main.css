@@ -40,25 +40,15 @@ body {
   height: 3rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  cursor: default;
-  opacity: 0.5;
-  cursor: pointer;
-}
-.b-download-game .b-download-game-item .loader {
-  background: url("../images/loader2.png") no-repeat center;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-}
-.b-download-game .b-download-game-item.active {
   opacity: 1;
-}
-.b-download-game .b-download-game-item.active .loader {
-  display: none;
+  cursor: pointer;
 }
 .b-download-game .b-download-game-item > a {
   height: 3rem;
   display: block;
+}
+.b-download-game .b-download-game-item > a:hover {
+  border: 1px solid transparent;
 }
 .b-download-game .b-download-game-item > p {
   font-size: 0.7rem;

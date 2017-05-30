@@ -3,8 +3,10 @@
  */
 (function () {
 	window.onload = function () {
-		// mafia.core.run();
-		console.log('loaded');
+		const loader = document.querySelector('.popup-loader');
+		const parent =loader.parentNode;
+		parent.removeChild(loader);
+
 		var buttons = document.getElementsByClassName('b-download-game-item');
 		for (var i = 0; i < buttons.length; i++) {
 			var btn = buttons[i];
