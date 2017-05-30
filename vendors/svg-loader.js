@@ -43,6 +43,6 @@ function svgLoader(options) {
     _ajax.send();
 };
 
-var svgPath = { filename: 'play/images/svg-build/sprite.svg' };
+var svgPath = { filename: 'images/svg-build/sprite.svg' };
 
 svgLoader(svgPath);
