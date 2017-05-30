@@ -1,0 +1,460 @@
+.screen-full {
+  width: 100%;
+  height: 100%;
+  display: table;
+  overflow: hidden;
+}
+.screen-side {
+  background: #0c0c0c;
+}
+.splash-header {
+  top: 1rem;
+  width: 100%;
+  font-family: 'Attentica 4F', sans-serif;
+  background: url("../images/smoke.png") center no-repeat;
+  background-size: contain;
+  height: 20%;
+}
+.splash-header .splash-title {
+  font-family: inherit;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 1rem;
+  color: #991c00;
+  text-shadow: 2px 1px 0px #fff;
+  text-transform: uppercase;
+}
+.splash-header .splash-subtitle {
+  font-family: inherit;
+  text-align: right;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+  padding-right: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.screen .round-screen {
+  padding-top: 2rem;
+}
+.screen .round-screen .header {
+  padding: 1rem 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.screen .round-screen .header .user-name {
+  font-size: 1.5rem;
+}
+.screen .round-screen .header .user-role {
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  padding-top: 0.5rem;
+  color: #991c00;
+}
+.screen .round-screen .wrapper {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+.screen .round-screen .wrapper.role {
+  height: 270px;
+}
+.screen .round-screen .wrapper .arrested {
+  position: absolute;
+  width: 250px;
+  transition: all 1s ease-in-out;
+  z-index: 100;
+}
+.screen .round-screen .wrapper .arrested:before {
+  content: ' ';
+  background: url("../images/svg/screens/prison.svg") no-repeat center;
+  background-size: contain;
+  height: 250px;
+  display: block;
+}
+.screen .round-screen .wrapper .person.civil {
+  background: url("../images/arrested_civil.png") no-repeat center;
+  background-size: contain;
+  height: inherit;
+  width: 250px;
+  position: absolute;
+  top: 0px;
+}
+.screen .round-screen .wrapper .person.mafia {
+  background: url("../images/arrested_mafia.png") no-repeat center;
+  background-size: contain;
+  height: inherit;
+  width: 250px;
+  position: absolute;
+  top: 0px;
+}
+.screen .round-screen .killed {
+  background: url("../images/svg/screens/civil-killed.svg") no-repeat center;
+  background-size: contain;
+  height: 180px;
+}
+.screen .round-screen .footer {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.screen .round-screen .footer .subdesc {
+  font-size: 0.6rem;
+  padding: 1rem 3rem;
+  font-family: 'RobotoBold';
+}
+.screen .night-screen {
+  background: #0c0c0c;
+}
+.screen .night-screen,
+.screen .fin-screen,
+.screen .start-screen,
+.screen .role-screen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+/* final screens winner*/
+}
+.screen .night-screen .full-screen-img,
+.screen .fin-screen .full-screen-img,
+.screen .start-screen .full-screen-img,
+.screen .role-screen .full-screen-img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.screen .night-screen .full-screen-img.splash-screen,
+.screen .fin-screen .full-screen-img.splash-screen,
+.screen .start-screen .full-screen-img.splash-screen,
+.screen .role-screen .full-screen-img.splash-screen {
+  background: url("../images/svg/screens/splash.svg") no-repeat top;
+  background-size: contain;
+  background-position: center;
+  height: 50%;
+}
+.screen .night-screen .full-screen-img.mafia-hunted,
+.screen .fin-screen .full-screen-img.mafia-hunted,
+.screen .start-screen .full-screen-img.mafia-hunted,
+.screen .role-screen .full-screen-img.mafia-hunted {
+  background: url("../images/svg/screens/hunted.svg") no-repeat center;
+  background-size: cover;
+}
+.screen .night-screen .full-screen-img.mafia-killed,
+.screen .fin-screen .full-screen-img.mafia-killed,
+.screen .start-screen .full-screen-img.mafia-killed,
+.screen .role-screen .full-screen-img.mafia-killed {
+  background: url("../images/svg/screens/hunted-kill.svg") no-repeat center;
+  background-size: cover;
+}
+.screen .night-screen .full-screen-img.mafia-miss,
+.screen .fin-screen .full-screen-img.mafia-miss,
+.screen .start-screen .full-screen-img.mafia-miss,
+.screen .role-screen .full-screen-img.mafia-miss {
+  background: url("../images/svg/screens/hunted-miss2.svg") no-repeat center;
+  background-size: cover;
+}
+.screen .night-screen .full-screen-img.you-arrested,
+.screen .fin-screen .full-screen-img.you-arrested,
+.screen .start-screen .full-screen-img.you-arrested,
+.screen .role-screen .full-screen-img.you-arrested {
+  background: url("../images/svg/screens/arrested.svg") no-repeat top;
+  background-size: contain;
+}
+.screen .night-screen .full-screen-img.you-killed,
+.screen .fin-screen .full-screen-img.you-killed,
+.screen .start-screen .full-screen-img.you-killed,
+.screen .role-screen .full-screen-img.you-killed {
+  background: url("../images/svg/screens/shoot.svg") no-repeat center;
+  background-color: #000;
+  background-size: contain;
+}
+.screen .night-screen .civil-win,
+.screen .fin-screen .civil-win,
+.screen .start-screen .civil-win,
+.screen .role-screen .civil-win {
+  background: url("../images/svg/screens/civil-win.svg") no-repeat top;
+  background-size: contain;
+  width: 100%;
+  height: 40%;
+}
+.screen .night-screen .mafia-win,
+.screen .fin-screen .mafia-win,
+.screen .start-screen .mafia-win,
+.screen .role-screen .mafia-win {
+  background: url("../imagessvg/screens//mafia-win.svg") no-repeat top;
+  background-size: contain;
+  width: 100%;
+  height: 40%;
+}
+.screen .night-screen .header,
+.screen .fin-screen .header,
+.screen .start-screen .header,
+.screen .role-screen .header {
+  padding: 2rem 0;
+  font-size: 0.75rem;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.screen .night-screen .footer,
+.screen .fin-screen .footer,
+.screen .start-screen .footer,
+.screen .role-screen .footer {
+  position: absolute;
+  bottom: 30%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.screen .night-screen .footer .desc.black,
+.screen .fin-screen .footer .desc.black,
+.screen .start-screen .footer .desc.black,
+.screen .role-screen .footer .desc.black {
+  color: #000;
+}
+.screen .fin-screen,
+.screen .role-screen {
+  padding: 2rem;
+}
+.screen .fin-screen .svg-icon,
+.screen .role-screen .svg-icon {
+  width: 100%;
+}
+.screen .fin-screen .footer,
+.screen .role-screen .footer {
+  position: relative;
+  bottom: auto;
+  padding-top: 1rem;
+}
+.screen .fin-screen.full,
+.screen .role-screen.full {
+  padding: 0;
+}
+.screen .fin-screen.full .footer,
+.screen .role-screen.full .footer {
+  position: absolute;
+  bottom: 20%;
+}
+.screen .role-screen {
+  padding: 3rem 0;
+}
+.screen .role-screen .header {
+  font-size: 1.2rem;
+}
+.screen .start-screen {
+  background: #656565;
+}
+.screen-side {
+  width: 100%;
+  height: 100%;
+}
+.screen-side .logo {
+  margin-bottom: 4rem;
+}
+.screen-side .logo span {
+  color: #fff;
+  border-top: 0.5rem solid #fff;
+}
+.screen-side .game-number {
+  position: absolute;
+  text-align: center;
+  background: transparent;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1.4rem 0.5rem 0.2rem;
+  top: auto;
+  left: auto;
+}
+.screen-side .game-number >div {
+  color: #969696;
+}
+.screen-side .game-number >div.number {
+  color: #c2c0c2;
+}
+.screen-side .game-screen-element .header {
+  margin-bottom: 1.5rem;
+  margin-left: 0.1rem;
+}
+.screen-side .game-screen-element .header >span .votes-wrapper {
+  padding: 0;
+  height: 4rem;
+}
+.screen-side .game-screen-element .header >span .votes-wrapper .votes {
+  width: 0.6rem;
+}
+.screen-side .game-screen-element.players-list .wrapper-list .fader {
+  height: 4rem;
+  background: rgba(0,0,0,0);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, #000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, #000));
+  -webkit-background-origin: padding-box;
+}
+.screen-side .game-screen-element {
+  padding: 0 3rem;
+}
+.screen-side .user-name {
+  color: #fff;
+  font-size: 1rem;
+  max-width: 16rem;
+  overflow: hidden;
+  max-height: 3rem;
+}
+.screen-side .player-list-item {
+  width: 100%;
+}
+.screen-side .player-list-item .status-icon .uil-ring-css > div {
+  box-shadow: 0 2px 0 0 #991c00;
+}
+.screen-side .player-list-item .status-icon .icon-complete {
+  background: url("../images/complete.png") no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 28px;
+}
+.screen-side .player-list-item .player-name {
+  color: #fff;
+  width: 100%;
+  padding-left: 0;
+  padding: 0.2rem;
+}
+.screen-side .player-list-item .player-name .self-name {
+  padding-top: 0.8rem;
+}
+.screen-side .player-list-item .player-name .target-name {
+  text-align: right;
+  color: #969696;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.screen-side .player-list-item.inactive {
+  background-color: transparent;
+}
+.screen-side .player-list-item.inactive .icon {
+  width: 2.5rem;
+}
+.screen-side .player-list-item.handcuff,
+.screen-side .player-list-item.gun {
+  border-right: none;
+  border-left: none;
+}
+.screen-side .circle-bgr {
+  position: absolute;
+  top: -1.7rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.screen-side .circle-bgr .center {
+  background: #991c00;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  margin: 0 auto;
+  padding-top: 4rem;
+  box-shadow: 0 2px 0 0 #991c00;
+  -ms-animation: uil-ring-anim 3s linear infinite;
+  -moz-animation: uil-ring-anim 3s linear infinite;
+  -webkit-animation: uil-ring-anim 3s linear infinite;
+  -o-animation: uil-ring-anim 3s linear infinite;
+  -webkit-animation: uil-ring-anim 3s linear infinite;
+  -moz-animation: uil-ring-anim 3s linear infinite;
+  -o-animation: uil-ring-anim 3s linear infinite;
+  animation: uil-ring-anim 3s linear infinite;
+}
+.screen-side .circle-bgr .center:after {
+  content: '';
+  color: #fff;
+  background: #2b2b2b;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 1px 0 0 #969696;
+  -ms-animation: uil-ring-anim 0.1s linear;
+  -moz-animation: uil-ring-anim 0.1s linear;
+  -webkit-animation: uil-ring-anim 0.1s linear;
+  -o-animation: uil-ring-anim 0.1s linear;
+  -webkit-animation: uil-ring-anim 0.1s linear;
+  -moz-animation: uil-ring-anim 0.1s linear;
+  -o-animation: uil-ring-anim 0.1s linear;
+  animation: uil-ring-anim 0.1s linear;
+}
+.screen-side .circle-bgr .patifon {
+  background: url("../images/patifon.png") no-repeat center;
+  background-size: contain;
+  width: 190px;
+  height: 92px;
+  top: -7rem;
+  left: 3rem;
+  margin: 0 auto;
+}
+.disabled {
+  display: none;
+}
+.popup-loader {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(158,158,158,0.4);
+  z-index: 300;
+  top: 0;
+  left: 0;
+}
+.popup-loader .wrapper {
+  height: inherit;
+  width: inherit;
+}
+.popup-loader .wrapper .uil-ring-css {
+  margin: 0 auto;
+  top: 45%;
+}
+.popup-loader .wrapper .uil-ring-css >div {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0.2rem;
+  left: 0px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px 3px #991c00;
+}
+.wrapper-counter {
+  position: absolute;
+  top: 0.7rem;
+  color: #fff;
+  z-index: 50;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+}
+.wrapper-counter.reverse {
+  color: #fff;
+}
+.wrapper-counter.reverse .title-counter {
+  color: #fff;
+}
+.wrapper-counter .title-counter {
+  font-family: 'Attentica 4F';
+  font-size: 1.2rem;
+  color: #991c00;
+}
+.wrapper-counter .counter {
+  font-size: 1.5rem;
+}
+.wrapper-counter .counter >div {
+  display: inline-block;
+  font-family: 'Attentica 4F';
+  background: #000;
+  margin: 0 0.1rem;
+  padding: 0.3rem 0.2rem 0rem 0.4rem;
+  line-height: 1.7rem;
+}
