@@ -36,12 +36,23 @@ body {
   bottom: 10%;
 }
 .b-download-game .b-download-game-item {
+  -ms-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  outline: none;
+}
+.b-download-game .b-download-game-item {
   width: 100%;
   height: 3rem;
   text-align: center;
   margin-bottom: 0.5rem;
-  opacity: 1;
+  opacity: 0;
   cursor: pointer;
+}
+.b-download-game .b-download-game-item.active {
+  opacity: 1;
 }
 .b-download-game .b-download-game-item > a {
   height: 3rem;
