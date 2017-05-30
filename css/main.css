@@ -33,11 +33,11 @@ body {
   height: auto;
   background-size: contain;
   position: absolute;
-  bottom: 12%;
+  bottom: 10%;
 }
 .b-download-game .b-download-game-item {
   width: 100%;
-  height: 3.5rem;
+  height: 3rem;
   text-align: center;
   margin-bottom: 0.5rem;
   cursor: default;
@@ -57,7 +57,7 @@ body {
   display: none;
 }
 .b-download-game .b-download-game-item > a {
-  height: 3.5rem;
+  height: 3rem;
   display: block;
 }
 .b-download-game .b-download-game-item > p {
