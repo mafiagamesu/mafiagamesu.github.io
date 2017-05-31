@@ -35,7 +35,7 @@ body {
   position: absolute;
   bottom: 10%;
 }
-.b-download-game .b-download-game-item {
+.b-download-game-item {
   -ms-transition: opacity 0.4s linear;
   -moz-transition: opacity 0.4s linear;
   -webkit-transition: opacity 0.4s linear;
@@ -43,7 +43,7 @@ body {
   transition: opacity 0.4s linear;
   outline: none;
 }
-.b-download-game .b-download-game-item {
+.b-download-game-item {
   width: 100%;
   height: 3rem;
   text-align: center;
@@ -51,30 +51,30 @@ body {
   opacity: 0;
   cursor: pointer;
 }
-.b-download-game .b-download-game-item.active {
+.b-download-game-item.active {
   opacity: 1;
 }
-.b-download-game .b-download-game-item > a {
+.b-download-game-item > a {
   height: 3rem;
   display: block;
 }
-.b-download-game .b-download-game-item > a:hover {
+.b-download-game-item > a:hover {
   border: 1px solid transparent;
 }
-.b-download-game .b-download-game-item > p {
+.b-download-game-item > p {
   font-size: 0.7rem;
   color: #fff;
   margin: 0.2rem;
 }
-.b-download-game .b-download-game-item.b-download-game-appstore > a {
+.b-download-game-item.b-download-game-appstore > a {
   background: url("../images/app-store_coming-soon.png") center no-repeat;
   background-size: contain;
 }
-.b-download-game .b-download-game-item.b-download-game-google > a {
+.b-download-game-item.b-download-game-google > a {
   background: url("../images/app-google.png") center no-repeat;
   background-size: contain;
 }
-.b-download-game .b-download-game-item.b-download-game-browser > a {
+.b-download-game-item.b-download-game-browser > a {
   background: url("../images/app-browser.png") center no-repeat;
   background-size: contain;
 }
@@ -534,7 +534,7 @@ section.screens.menu-hide-left {
   left: 0px;
 }
 .content-menu-list {
-  min-width: 15rem;
+  width: 16rem;
   height: inherit;
   position: absolute;
   top: 0;
