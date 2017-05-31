@@ -38,6 +38,10 @@ body {
   cursor: pointer;
   z-index: 100;
 }
+.b-description-overlay .button-ok {
+  display: block;
+  margin: 10% 36% 0;
+}
 .b-download-game {
   width: 100%;
   height: auto;
