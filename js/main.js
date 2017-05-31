@@ -16,6 +16,7 @@
 			const parentLoader =loader.parentNode;
 			parentLoader.removeChild(loader);
 			const desc = document.querySelector('.b-description-overlay');
+			desc.classList += ' active';
 			const parentDesc = desc.parentNode;
 			desc.addEventListener('click', function () {
 				parentDesc.removeChild(this);
@@ -31,7 +32,7 @@
 							}
 							if(type !== "download-android") window.mafia.core.run();
 						});
-					}, i * 400);
+					}, i * 200);
 				}
 			});
 

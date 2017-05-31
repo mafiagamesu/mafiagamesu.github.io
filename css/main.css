@@ -37,6 +37,18 @@ body {
   color: #fff;
   cursor: pointer;
   z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  -ms-transition: opacity 0.4s linear;
+  -moz-transition: opacity 0.4s linear;
+  -webkit-transition: opacity 0.4s linear;
+  -o-transition: opacity 0.4s linear;
+  transition: opacity 0.4s linear;
+  outline: none;
+}
+.b-description-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 .b-description-overlay .button-ok {
   display: block;
