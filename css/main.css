@@ -28,6 +28,16 @@ body {
   padding: 0;
   background-color: #656565;
 }
+.b-description-overlay {
+  position: absolute;
+  bottom: 10%;
+  background: rgba(0,0,0,0.4);
+  padding: 20px;
+  margin: 0 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
 .b-download-game {
   width: 100%;
   height: auto;
@@ -49,10 +59,12 @@ body {
   text-align: center;
   margin-bottom: 0.5rem;
   opacity: 0;
+  visibility: hidden;
   cursor: pointer;
 }
 .b-download-game-item.active {
   opacity: 1;
+  visibility: visible;
 }
 .b-download-game-item > a {
   height: 3rem;
