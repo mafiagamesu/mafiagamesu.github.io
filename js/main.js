@@ -5,8 +5,9 @@
 	window.onload = function () {
 		var gameIsRun = false;
 		for(const item in window.localStorage) {
-			if(item.indexOf('prefs') !== -1 && window.localStorage[item].match("start")) {
+			if(item.indexOf('prefs') !== -1 && window.localStorage[item].match("game-screen-data")) {
 				gameIsRun = true;
+				console.log(window.localStorage[item])
 			}
 		}
 
