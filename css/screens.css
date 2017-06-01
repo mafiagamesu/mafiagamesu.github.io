@@ -66,11 +66,11 @@
 .screen .round-screen .wrapper .arrested {
   position: absolute;
   width: 250px;
-  transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
   z-index: 100;
 }
 .screen .round-screen .wrapper .arrested:before {
@@ -78,12 +78,15 @@
   background: url("../images/svg/screens/prison.svg") no-repeat center;
   background-size: contain;
   height: 250px;
+  width: 250px;
   display: block;
+  position: absolute;
+  z-index: 1000;
 }
 .screen .round-screen .wrapper .person.civil {
   background: url("../images/arrested_civil.png") no-repeat center;
   background-size: contain;
-  height: inherit;
+  height: 250px;
   width: 250px;
   position: absolute;
   top: 0px;
@@ -91,7 +94,7 @@
 .screen .round-screen .wrapper .person.mafia {
   background: url("../images/arrested_mafia.png") no-repeat center;
   background-size: contain;
-  height: inherit;
+  height: 250px;
   width: 250px;
   position: absolute;
   top: 0px;
@@ -191,7 +194,7 @@
 .screen .fin-screen .mafia-win,
 .screen .start-screen .mafia-win,
 .screen .role-screen .mafia-win {
-  background: url("../imagessvg/screens//mafia-win.svg") no-repeat top;
+  background: url("../images/svg/screens/mafia-win.svg") no-repeat top;
   background-size: contain;
   width: 100%;
   height: 40%;
