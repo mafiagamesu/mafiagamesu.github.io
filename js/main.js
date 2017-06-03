@@ -7,7 +7,7 @@
 		for(var item in window.localStorage) {
 			if(item.indexOf('prefs') !== -1 && window.localStorage[item].match("game-screen-data")) {
 				gameIsRun = true;
-				console.log(window.localStorage[item])
+				// console.log(window.localStorage[item])
 			}
 		}
 
@@ -23,16 +23,7 @@
 				var buttons = document.getElementsByClassName('b-download-game-item');
 				for (var i = 0; i < buttons.length; i++) {
 					var btn = buttons[i];
-					setTimeout(function () {
-						btn.className += " active";
-						btn.addEventListener('click', function () {
-							var type = btn.getAttribute("ga-id");
-							if(window.ga) {
-								window.ga('send', 'event', 'link', 'click', type);
-							}
-							if(type !== "download-android") window.mafia.core.run();
-						});
-					}, i * 200);
+					showButton(btn, i);
 				}
 			});
 
@@ -41,4 +32,18 @@
 			window.mafia.core.run();
 		}
 	};
+
+	function showButton(btn, index) {
+		setTimeout(function () {
+			btn.className += " active";
+			btn.addEventListener('click', function () {
+				var type = btn.getAttribute("ga-id");
+				if(window.ga) {
+					window.ga('send', 'event', 'link', 'click', type);
+				}
+				if(type !== "download-android") window.mafia.core.run();
+			});
+		}, index * 200);
+	};
+
 })();
