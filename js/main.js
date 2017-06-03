@@ -4,7 +4,7 @@
 (function () {
 	window.onload = function () {
 		var gameIsRun = false;
-		for(const item in window.localStorage) {
+		for(var item in window.localStorage) {
 			if(item.indexOf('prefs') !== -1 && window.localStorage[item].match("game-screen-data")) {
 				gameIsRun = true;
 				console.log(window.localStorage[item])
@@ -12,17 +12,17 @@
 		}
 
 		if(!gameIsRun) {
-			const loader = document.querySelector('.popup-loader');
-			const parentLoader =loader.parentNode;
+			var loader = document.querySelector('.popup-loader');
+			var parentLoader =loader.parentNode;
 			parentLoader.removeChild(loader);
-			const desc = document.querySelector('.b-description-overlay');
+			var desc = document.querySelector('.b-description-overlay');
 			desc.classList += ' active';
-			const parentDesc = desc.parentNode;
+			var parentDesc = desc.parentNode;
 			desc.addEventListener('click', function () {
 				parentDesc.removeChild(this);
 				var buttons = document.getElementsByClassName('b-download-game-item');
 				for (var i = 0; i < buttons.length; i++) {
-					const btn = buttons[i];
+					var btn = buttons[i];
 					setTimeout(function () {
 						btn.className += " active";
 						btn.addEventListener('click', function () {
