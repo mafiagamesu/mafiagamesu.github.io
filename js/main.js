@@ -3,6 +3,7 @@
  */
 (function () {
 	window.onload = function () {
+	    window.mafia.core.pingServer();
 		var gameIsRun = false;
 		for(var item in window.localStorage) {
 			if(item.indexOf('prefs') !== -1 && window.localStorage[item].match("game-screen-data")) {
