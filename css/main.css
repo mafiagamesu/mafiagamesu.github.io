@@ -531,6 +531,9 @@ body {
   position: absolute;
   z-index: 100;
 }
+.menu.hide {
+  display: none;
+}
 .menu .menu-item {
   margin-left: 2rem;
   width: 1.5rem;
