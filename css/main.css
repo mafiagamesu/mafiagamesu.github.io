@@ -82,6 +82,9 @@ body {
   opacity: 1;
   visibility: visible;
 }
+.b-download-game-item.active.hide {
+  opacity: 0;
+}
 .b-download-game-item > a {
   height: 3rem;
   display: block;

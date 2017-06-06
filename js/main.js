@@ -37,7 +37,7 @@
 
 	function showButton(btn, index) {
 		setTimeout(function () {
-			btn.className += " active";
+			btn.className += ' active';
 			btn.addEventListener('click', function () {
 				var type = btn.getAttribute("ga-id");
 				if(window.ga) {
@@ -51,14 +51,14 @@
 
 	function hideButtons(btn, index, items) {
 		setTimeout(function () {
-			btn.className = btn.className.slice(0, -6);
+			btn.className += ' hide';
 			if(items === index + 1) {
 				addLoader();
 				setTimeout(function () {
 					window.mafia.core.run();
-				}, 500)
+				}, 500);
 			}
-		}, 100 * index);
+		}, 300 * index);
 	}
 
 	function onClickWeb() {
@@ -70,8 +70,8 @@
 	}
 
 	function addLoader() {
-		var screen = document.querySelector('.start-screen');
-		screen.innerHTML = '<div class="popup-loader"><div class="wrapper"><div class="uil-ring-css"><div></div></div></div></div>';
+		var screen = document.querySelector('.b-download-game').parentNode;
+		screen.innerHTML += '<div class="popup-loader"><div class="wrapper"><div class="uil-ring-css"><div></div></div></div></div>';
 	}
 
 })();
