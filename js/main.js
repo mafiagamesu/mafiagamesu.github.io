@@ -30,6 +30,7 @@
 
 
 		} else {
+			addLoader();
 			window.mafia.core.run();
 		}
 	};
@@ -42,9 +43,35 @@
 				if(window.ga) {
 					window.ga('send', 'event', 'link', 'click', type);
 				}
-				if(type !== "download-android") window.mafia.core.run();
+				if(type !== "download-android") onClickWeb();
+
 			});
 		}, index * 200);
-	};
+	}
+
+	function hideButtons(btn, index, items) {
+		setTimeout(function () {
+			btn.className = btn.className.slice(0, -6);
+			if(items === index + 1) {
+				addLoader();
+				setTimeout(function () {
+					window.mafia.core.run();
+				}, 500)
+			}
+		}, 100 * index);
+	}
+
+	function onClickWeb() {
+		var buttons = document.getElementsByClassName('b-download-game-item');
+		for (var i = 0; i < buttons.length; i++) {
+			var btn = buttons[i];
+			hideButtons(btn, i, buttons.length);
+		}
+	}
+
+	function addLoader() {
+		var screen = document.querySelector('.start-screen');
+		screen.innerHTML = '<div class="popup-loader"><div class="wrapper"><div class="uil-ring-css"><div></div></div></div></div>';
+	}
 
 })();
