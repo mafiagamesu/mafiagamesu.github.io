@@ -17,7 +17,7 @@
 			var parentLoader =loader.parentNode;
 			parentLoader.removeChild(loader);
 			var desc = document.querySelector('.b-description-overlay');
-			desc.classList += ' active';
+			desc.className += ' active';
 			var parentDesc = desc.parentNode;
 			desc.addEventListener('click', function () {
 				parentDesc.removeChild(this);
