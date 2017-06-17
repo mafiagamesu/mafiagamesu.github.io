@@ -43,7 +43,7 @@
 				if(window.ga) {
 					window.ga('send', 'event', 'link', 'click', type);
 				}
-				if(type !== "download-android") onClickWeb();
+				onClickWeb();
 
 			});
 		}, index * 200);

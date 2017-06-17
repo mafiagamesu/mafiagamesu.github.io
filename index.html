@@ -72,7 +72,20 @@
     <img src="//top-fwz1.mail.ru/counter?id=2880484;js=na" style="border:0;position:absolute;left:-9999px;" alt="" />
     </div></noscript>
     <!-- //Rating@Mail.ru counter -->
-
+    <script type="text/javascript">
+        window.doorbellOptions = {
+            hideEmail: true,
+            email: "default@example.com",
+            hideButton: true,
+            appKey: 'VGfMeqaHdeFOACKuoAyBp39GlX7qKRSDoJwSv4h3cHKCbhUcGO7BUskkLlmEX6MA'
+        };
+        (function(w, d, t) {
+        var hasLoaded = false;
+        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/6337?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+        if (d.readyState == 'complete') { l(); }
+        }(window, document, 'script'));
+    </script>
 
     <link href="styles/styles.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -91,12 +104,17 @@
             <span class="button-ok button-red active">OK</span>
           </div>
           <div class="b-download-game">
-            <div class="b-download-game-item b-download-game-appstore b-web-play-game" ga-id="download-ios">
+            <div class="b-download-game-item b-download-game-appstore " ga-id="download-ios">
               <a href="javascript:;"></a>
             </div>
-            <div class="b-download-game-item b-download-game-google">
-              <a href="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/256645/1673012/BuXpYvdUCF3gwQ2/Main.apk" ga-id='download-android'></a>
+
+            <div class="b-download-game-item b-download-game-google ">
+              <a href="javascript:;"></a>
             </div>
+
+            <!--div class="b-download-game-item b-download-game-google">
+              <a href="https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/256645/1673012/BuXpYvdUCF3gwQ2/Main.apk" ga-id='download-android'></a>
+            </div-->
             <div class="b-download-game-item b-download-game-browser b-web-play-game" ga-id="web-version">
               <a href="javascript:;"></a>
             </div>
