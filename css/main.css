@@ -672,3 +672,26 @@ section.screens.menu-hide-left {
 .content-menu-list .list .item-list:hover {
   color: #991c00;
 }
+/* feedback style */
+#doorbell {
+  padding: 1rem;
+}
+#doorbell button {
+  text-align: center;
+  background-color: #991c00;
+  padding: 0.7rem 0 0.6rem 0;
+  color: #ebe1d7;
+  letter-spacing: 0.25rem;
+  font-size: 1.4rem;
+  font-family: 'Attentica 4F', sans-serif;
+  height: 3rem;
+  line-height: 2rem;
+  border: none;
+}
+#doorbell form legend {
+  font-weight: 700;
+  border-bottom: none !important;
+}
+#doorbell form >a {
+  display: none !important;
+}
