@@ -674,7 +674,7 @@ section.screens.menu-hide-left {
 }
 /* feedback style */
 #doorbell {
-  padding: 1rem;
+  padding: 0.2rem;
 }
 #doorbell button {
   text-align: center;
